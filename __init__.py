@@ -1,7 +1,6 @@
 import urllib.request, urllib.error, urllib.parse
 import http.cookiejar
-from getpass import getpass
-import sys
+
 def send(username,password,number,message=None):
 	
 	message = "+".join(message.split(' '))
