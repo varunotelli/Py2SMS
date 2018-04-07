@@ -1,4 +1,4 @@
-# SMSPy
+# Py2SMS
 Python code to send SMS with Way2Sms
 
 Send upto 100 free [SMS](http://site24.way2sms.com/content/index.html) within 10 seconds daily.
@@ -10,14 +10,14 @@ Send upto 100 free [SMS](http://site24.way2sms.com/content/index.html) within 10
 * Create an account in [Way2SMS](www.way2sms.com/)
 
 ```python
-import smspy
+import py2sms
 ```
 -  Sending message
 
   ```python
-s=smspy.send(username,password,number,message)
+s=py2sms.send(username,password,number,message)
   ```
-* If message was sent successfully, smspy.send() will return True, else False
+* If message was sent successfully, py2sms.send() will return True, else False
 
 # Disclaimer
 This code was inspired by [http://home.iitk.ac.in/~saiwal/productivity/send-sms-way2sms-python/](http://home.iitk.ac.in/~saiwal/productivity/send-sms-way2sms-python/)
