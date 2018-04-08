@@ -8,7 +8,7 @@ Send upto 100 free [SMS](http://site24.way2sms.com/content/index.html) within 10
 ### Prerequisites
 * Install Python3.x from [here.](https://www.python.org/)
 * Create an account in [Way2SMS](www.way2sms.com/)
-*Install py2sms using `pip install py2sms`
+* Install py2sms using `pip install py2sms`
 
 ### How to use Py2SMS
 
