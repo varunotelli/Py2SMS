@@ -22,11 +22,10 @@ def send(username,password,number,message=''):
 	    return False
 	    
 	 
-	 
 	session_id = str(cj).split('~')[1].split(' ')[0]
 	smsurl = 'http://www.way2sms.com/smstoss'
 	data = 'ssaction=ss&Token='+session_id+'&toMobile='+number+'&message='+message
-	opener.addheaders = [('Referer', 'http://www.way2sms.com/send-sms'+session_id)]
+	opener.addheaders = [('Referer', 'http://www.way2sms.com/send-sms+'+session_id)]
 	 
 	try:
 	    page = opener.open(smsurl,data.encode('utf-8'))
@@ -34,4 +33,4 @@ def send(username,password,number,message=''):
 	    return False
 	
 	return True
-
+	
