@@ -1,7 +1,7 @@
 import urllib.request, urllib.error, urllib.parse
 import http.cookiejar
 
-def send(username,password,number,message=None):
+def send(username,password,number,message=''):
 	
 	message = "+".join(message.split(' '))
 
