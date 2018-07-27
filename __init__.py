@@ -6,8 +6,8 @@ def send(username,password,number,message=None):
 	message = "+".join(message.split(' '))
 
 	
-	url = 'http://site24.way2sms.com/Login1.action?'
-	data = 'username='+username+'&password='+password+'&Submit=Sign+in'
+	url = 'http://site24.way2sms.com/re-login'
+	data = 'mobileNo='+username+'&password='+password+'&CatType'
 	 
 	#For Cookies:
 	cj = http.cookiejar.CookieJar()
@@ -24,9 +24,9 @@ def send(username,password,number,message=None):
 	 
 	 
 	session_id = str(cj).split('~')[1].split(' ')[0]
-	smsurl = 'http://site24.way2sms.com/smstoss.action?'
-	data = 'ssaction=ss&Token='+session_id+'&mobile='+number+'&message='+message+'&msgLen=136'
-	opener.addheaders = [('Referer', 'http://site25.way2sms.com/sendSMS?Token='+session_id)]
+	smsurl = 'http://site24.way2sms.com/smstoss'
+	data = 'ssaction=ss&Token='+session_id+'&toMobile='+number+'&message='+message
+	opener.addheaders = [('Referer', 'http://www.way2sms.com/send-sms'+session_id)]
 	 
 	try:
 	    page = opener.open(smsurl,data.encode('utf-8'))
