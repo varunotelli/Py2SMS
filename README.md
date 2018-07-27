@@ -1,9 +1,9 @@
 # Py2SMS
-Python code to send SMS with Way2Sms
+Python3 code to send SMS with Way2Sms
 
-Send upto 100 free [SMS](http://site24.way2sms.com/content/index.html) within 10 seconds daily yo any phone number in India.
+Send upto 100 free [SMS](http://www.way2sms.com/content/index.html) within 10 seconds daily yo any phone number in India.
 
-[Way2Sms](http://site24.way2sms.com/content/index.html) provides free SMS service upto **100** messages daily with message length upto **139**. 
+[Way2Sms](http://www.way2sms.com/content/index.html) provides free SMS service upto **10** messages daily with message length upto **139**. 
 
 ### Prerequisites
 * Install Python3.x from [here.](https://www.python.org/)
