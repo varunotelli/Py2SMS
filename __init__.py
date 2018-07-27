@@ -6,7 +6,7 @@ def send(username,password,number,message=''):
 	message = "+".join(message.split(' '))
 
 	
-	url = 'http://site24.way2sms.com/re-login'
+	url = 'http://www.way2sms.com/re-login'
 	data = 'mobileNo='+username+'&password='+password+'&CatType'
 	 
 	#For Cookies:
