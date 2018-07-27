@@ -24,7 +24,7 @@ def send(username,password,number,message=''):
 	 
 	 
 	session_id = str(cj).split('~')[1].split(' ')[0]
-	smsurl = 'http://site24.way2sms.com/smstoss'
+	smsurl = 'http://www.way2sms.com/smstoss'
 	data = 'ssaction=ss&Token='+session_id+'&toMobile='+number+'&message='+message
 	opener.addheaders = [('Referer', 'http://www.way2sms.com/send-sms'+session_id)]
 	 
